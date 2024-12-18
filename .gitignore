@@ -1,0 +1,16 @@
+
+# Virtual environment directories
+venv/
+env/
+Scripts/
+flask_session/
+Lib/
+Include/
+etc/
+
+# Environment variable files
+.env
+.cfg
+# SQLite database files
+*.db
+*.sqlite

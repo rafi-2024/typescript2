@@ -1,0 +1,25 @@
+npm -v
+python -m venv projectname
+npx tailwindcss init
+create following folders
+build, src
+inside build create index.html
+change contents in tailwind.config.js to content: ['./build/*.html'],
+create input.css inside src and change its contents to:
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+npx tailwindcss -i ./src/input.css -o ./build/css/style.css
+install tailwindcss extension
+create a div with tailwindcss inside index.html
+compile css with :
+npx tailwindcss -i ./src/input.css -o ./build/css/style.css --watch
+
+body> display grid place contents in center minimum height 
+min-h-screen grid place-content-center
+shortcut for creating a div
+div.bg-red-500.w-16.h-16.rounded-full.shadow-xl
+create custom classes in tailwind inside input.css
+.radial-blue {
+    background: radial-gradient(lightyellow, skyblue);
+}
