@@ -23,3 +23,36 @@ create custom classes in tailwind inside input.css
 .radial-blue {
     background: radial-gradient(lightyellow, skyblue);
 }
+git init typescript2
+git add .
+git commit -m "Initial Typescript"
+git push
+install extension inline fold if u want
+
+PROJECT 
+
+npm init -y
+change this scripts to this in package.json
+
+
+"scripts": {
+    "tailwind": "npx tailwind -i ./src/input.css -o ./build/css/style.css --watch"
+  },
+
+npm i -D prettier-plugin-tailwind
+change again
+
+"scripts": {
+    "tailwind": "npx tailwind -i ./src/input.css -o ./build/css/style.css --watch",
+    "prettier" : " npx prettier --write **/*.html"
+  },
+above are the shortcuts for running scripts
+npm run tailwind or npm run prettier
+use following for themes
+min-h-screen bg-slate-50 dark:bg-black dark:text-white
+
+header> section classes
+section.max-w-4xl.mx-auto.p-4.flex.justify-between.items-center
+
+
+<html lang="en" class="sm:scroll-smooth"> this is used for smooth scrolling behaviour
